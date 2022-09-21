@@ -13,7 +13,8 @@
         <p>Szeretek focizni. Jobbhátvédet játszok a Szentmihály csapatánál.</p>
         <img src="./szentmihaly.png" style="width:200px;height:200px;">
         <p>Szeretek kártyázni és informatikával foglalkozni.</p>
-        <table id="órarend" align="center">
+        <button onclick="document.querySelectorAll('#ora').forEach( v=> v.style.display = `block`)">Órarend</button>
+        <table id="ora" align="center">
         <tr>
             <th>Hétfő</th>
             <th>Kedd</th>
@@ -88,6 +89,9 @@
                 width: 400px;
             }
             h1{text-align: center; }
+            #ora {
+                display: none;
+            }
 
 
         </style>
