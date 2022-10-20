@@ -4,9 +4,7 @@
 
 </head>
 <body>
-    <div>
-       <button onclick="history.back()">Vissza</button>
-    </div>
+    <button class="gomb" onclick="history.back()">Vissza</button>
     <table id="ora" align="center">
         <tr>
             <th>Hétfő</th>
@@ -72,8 +70,10 @@
                 background-size: cover;
             }
 
-            div {
+            .gomb {
+                background-color: red;
                 text-align: right;
+                border-radius: 5px;
             }
 
            th, td {
