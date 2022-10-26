@@ -1,13 +1,13 @@
 
 <table>
     <tr>
-        <td>2. Dolgozat</td>
+        <td class="c" colspan="6">2. Dolgozat</td>
     </tr>
 </table>
 <table class="a">
     
     <tr>
-        <td>Keypad 1</td>
+        <td colspan="3"  class="d" >Keypad 1</td>
     </tr>
     <tr><td>1</td>
     <td>2</td>
@@ -21,7 +21,7 @@
     <td>8</td>
     <td>9</td>
 </tr>
-    <tr><td>C</td>
+    <tr><td colspan="2"  class="d" >C</td>
     <td>0</td>
 </tr>
 </table>
@@ -29,7 +29,7 @@
 <table class="b">
     
     <tr>
-        <td>Keypad 2</td>
+        <td colspan="3" class="d" >Keypad 2</td>
     </tr>
     <tr><td>1</td>
     <td>2</td>
@@ -43,7 +43,7 @@
     <td>8</td>
     <td>9</td>
 </tr>
-    <tr><td>C</td>
+    <tr><td colspan="2"  class="d" >C</td>
     <td>0</td>
 </tr>
 </table>
@@ -54,27 +54,51 @@
 
 
 <style>
+    .d
+    {
+        background-color: turquoise;
+    }
+
+    .c {
+        width: 36cm;
+    }
     
     td, tr {
-        background-color: yellowgreen;
+        text-align: center;
+        
         color: red;
         border-radius: 15px;
-       
+        padding: 20px;
+        
+        
     }
+
+    td {
+        background-color: yellowgreen;
+    }
+
     .a {
         border: 5px;
         float: left;
         border-style: dotted;
-        width: 50%;
-        border-radius: 15px;
+        width: 45%;
+        border-color: blue;
+        border-radius: 15px; 
+        border-spacing: 10px;
+        margin: 5px;
+        font-size: 30px;
     }
 
     .b {
         border: 5px;
-        float: right;
+        float: left;
         border-style: dotted;
-        width: 50%;
-        border-radius: 15px;
+        width: 45%;
+        border-color: blue;
+        border-radius: 15px; 
+        border-spacing: 10px;
+        margin: 5px;
+        font-size: 30px;
     }
     
 </style>
