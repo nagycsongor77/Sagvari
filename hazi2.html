@@ -1,52 +1,56 @@
 
-<table>
+<table align="center">
     <tr>
-        <td class="c" colspan="6">2. Dolgozat</td>
+        <td class="k" colspan="2">2. Dolgozat</td>
     </tr>
-</table>
-<table class="a">
+    <tr>
+        <td>
+            <table class="a">
     
-    <tr>
-        <td colspan="3"  class="d" >Keypad 1</td>
+            <tr>
+                <td colspan="3"  class="d" >Keypad 1</td>
+            </tr>
+            <tr><td class="k">1</td>
+            <td class="k">2</td>
+            <td class="k">3</td>
+        </tr>
+            <tr><td class="k">4</td>
+            <td class="k">5</td>
+            <td class="k">6</td>
+        </tr>
+            <tr><td class="k">7</td>
+            <td class="k">8</td>
+            <td class="k">9</td>
+        </tr>
+            <tr><td colspan="2"  class="d" >C</td>
+            <td class="k">0</td>
+        </tr>
+        </table></td>
+        <td><table class="b">
+    
+            <tr>
+                <td colspan="3" class="d" >Keypad 2</td>
+            </tr>
+            <tr><td class="k">3</td>
+            <td class="k">2</td>
+            <td class="k">1</td>
+        </tr>
+            <tr><td class="k">6</td>
+            <td class="k">5</td>
+            <td class="k">4</td>
+        </tr>
+            <tr><td class="k">9</td>
+            <td class="k">8</td>
+            <td class="k">7</td>
+        </tr>
+            <tr><td class="k">0</td>
+            <td  colspan="2"  class="d" >C</td>
+        </tr>
+        </table>
+        </td>
     </tr>
-    <tr><td>1</td>
-    <td>2</td>
-    <td>3</td>
-</tr>
-    <tr><td>4</td>
-    <td>5</td>
-    <td>6</td>
-</tr>
-    <tr><td>7</td>
-    <td>8</td>
-    <td>9</td>
-</tr>
-    <tr><td colspan="2"  class="d" >C</td>
-    <td>0</td>
-</tr>
-</table>
 
-<table class="b">
-    
-    <tr>
-        <td colspan="3" class="d" >Keypad 2</td>
-    </tr>
-    <tr><td>1</td>
-    <td>2</td>
-    <td>3</td>
-</tr>
-    <tr><td>4</td>
-    <td>5</td>
-    <td>6</td>
-</tr>
-    <tr><td>7</td>
-    <td>8</td>
-    <td>9</td>
-</tr>
-    <tr><td colspan="2"  class="d" >C</td>
-    <td>0</td>
-</tr>
-</table>
+
 
 
 
@@ -54,14 +58,25 @@
 
 
 <style>
+
+    table {
+        width: 80%;
+        height: 100%;
+    }
+
+    .k {
+        background-color: yellowgreen;
+        box-shadow: 1px 1px 1px black;
+        font-size: 30px;
+    }
+
     .d
     {
         background-color: turquoise;
+        box-shadow: 1px 1px 1px black;
     }
 
-    .c {
-        width: 36cm;
-    }
+
     
     td, tr {
         text-align: center;
@@ -73,32 +88,28 @@
         
     }
 
-    td {
-        background-color: yellowgreen;
-    }
 
     .a {
         border: 5px;
         float: left;
         border-style: dotted;
-        width: 45%;
         border-color: blue;
         border-radius: 15px; 
         border-spacing: 10px;
-        margin: 5px;
         font-size: 30px;
+
     }
 
     .b {
         border: 5px;
-        float: left;
+        float: right;
         border-style: dotted;
-        width: 45%;
         border-color: blue;
         border-radius: 15px; 
         border-spacing: 10px;
-        margin: 5px;
+
         font-size: 30px;
+
     }
     
 </style>
