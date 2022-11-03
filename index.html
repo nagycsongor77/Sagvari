@@ -11,21 +11,28 @@
     <body>
         <h1>Nagy Csongor</h1>
         <div style="text-align:center">
-        <a href="./orarend.html">Órarend</a>
+        <a href="./orarend.html" class="p">Órarend</a>
         <br>
-        <a href="./peldakep.html">Példaképem</a>
+        <a href="./peldakep.html" class="p">Példaképem</a>
         <br>
-        <a href="./hobbik.html">Hobbik</a>
+        <a href="./hobbik.html" class="p">Hobbik</a>
         <br>
-        <a draggable="true" class="titok" href="./tanar.html">Tanárunk</a>
+        <a draggable="false" class="titok" href="./tanar.html">Tanárunk</a>
         <br>
-        <p>Én kedves Gáborral</p>
+        <p class="h">Én kedves Gáborral</p>
         <img src="./ahhhhh.jpeg">
         
     </div>
         <style>
+            .h {
+                font-size: larger;
+                font-weight: 800;
+            }
+            .p {
+                font-weight: bold;
+                user-select: none;
+            }
             .titok {
-                color: white;
                 user-select: none;
                 cursor: default;
                 opacity: 0;
@@ -44,7 +51,9 @@
                 text-align: center;
             }
             body {
-                background-image: url("deszka.jpeg")
+                background-image: url("background.png");
+                background-size: cover;
+                
             }
             a {
                 text-decoration: none;
