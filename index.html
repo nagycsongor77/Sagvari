@@ -9,6 +9,15 @@
         </style>
     </head>
     <body>
+        <nav class="sidebar">
+            <div class="text">Side menu</div>
+            <ul>
+                <li><a>Snak</a></li>
+
+
+            </ul>
+        <a class="side">Barkóba</a>
+        </nav>
         <h1>Nagy Csongor</h1>
         <div style="text-align:center">
         <a href="./orarend.html" class="p">Órarend</a>
@@ -24,13 +33,31 @@
         
     </div>
         <style>
+            .side {
+                color: rgb(32, 136, 6);
+            }
+            .sidebar {
+                position: fixed;
+                width: 250px;
+                left: 0;
+                background: #1b1b1b ;
+                height: 100%;
+            }
+
+            nav {
+                background: red;
+                
+            }
+
             .h {
                 font-size: larger;
                 font-weight: 800;
+                color: rgb(143, 17, 132);
             }
             .p {
                 font-weight: bold;
                 user-select: none;
+
             }
             .titok {
                 user-select: none;
@@ -49,6 +76,7 @@
             }
             h1 {
                 text-align: center;
+                color: rgb(143, 17, 132);
             }
             body {
                 background-image: url("background.png");
@@ -57,7 +85,7 @@
             }
             a {
                 text-decoration: none;
-                color: black;
+                color: rgb(143, 17, 132);
             }
         </style>
     </body>
