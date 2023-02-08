@@ -1,0 +1,42 @@
+<body>
+    <div class="whole">
+        <p>Írja be a kör átmérőjét!</p>
+        <br>
+        <input type="number" value="1" onchange="a=Number(this.value)">
+        <br>
+        <button onclick="f()">Számolj!</button>
+        <br>
+        <p>Kerület</p>
+        <br>
+        <div id="x" ></div>
+        <br>
+        <p>Terület</p>
+        <br>
+        <div id="y" ></div>
+    </div>
+</body>
+
+
+
+<script>
+    a=1
+    function f() {
+        document.getElementById("x").innerHTML= a * Math.PI
+        document.getElementById("y").innerHTML=(a/2) ** 2 * Math.PI
+        
+    }
+ 
+</script>
+
+<style>
+    body {
+        text-align: center;
+    }
+    .whole {
+        display: inline-block;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 3px;
+        border: solid 1px black;
+    }
+</style>
