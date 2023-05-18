@@ -19,19 +19,33 @@ for num in t4:
         t4.remove(num)
 print(f'A 3. sorban szereplő 7-nél nagyobb számok maximuma: {max(t4)}')
 
-from math import sqrt as gy
 print("5. feladat")
-t50 = sorted(list(filter(lambda x: gy(x) == int(gy(x)),t[4])))
-t51 = ", ".join(map(str, t50))
-t52 = ", ".join(map(str,map(int, map(gy, t50))))
-t5x = reduce(lambda x, y: x + gy(y), filter(lambda x: gy(x) == int(gy(x)), t[4]), 0)
-print(f'A 4. sorban szereplő négyzetszámok ({t51}) négyzetgyökeinek ({t52}) összege: {t5x:0.0f}')
+t5 = t[3]
+def multiply_numbers(list):
+   prod = 1
+   for i in list:
+      prod = prod*i
+   return prod
+t5 = multiply_numbers(t5)
+
+print(f'A 4. sorban szereplő számok szorzatának nagyságrendje: 10^{len(str(t5))-1}')
 
 print("6. feladat")
 t6 = t[4]
+o = 0
+for num in t6: 
+    if num % 2 == 0:
+        o += num ** 2
+print(o)
 
 print("7. feladat")
-print(f'Az inputban szereplő összes szám közül a 12 legkisebb szám maximuma: {max(sorted(sum(t, []))[:12])}')
+t7 = t[:][:]
+def flatten(l):
+    return [item for sublist in l for item in sublist]
+t7 = flatten(t7)
+t7.sort(key = lambda x: x)
+t7 = t7[:12]
+print(f'Az inputban szereplő összes szám közül a 12 legkisebb szám maximuma: {max(t7)}')
 
 '''input.txt:
 53-38-81-3-75-81-33-90-74-4-99-41-2-82-5-19-10-55-68-59-93-80-85-21-77-9-95-35-92-78-11-21-40-46-4-51-68-96-48-83-32-16-32-34-20-82-46-96-68
