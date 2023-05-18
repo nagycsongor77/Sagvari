@@ -4,11 +4,11 @@
 <body>
     <p>Írja be a súlyát!</p>
     <br>
-    <input type="number" value="50" id="weight" onchange="a=Number(this.value)">
+    <input type="number" value="65" id="weight" onchange="a=Number(this.value)">
     <br>
     <p>Írja be a magasságát! (cm)</p>
     <br>
-    <input type="number" value="170" id="height" onchange="b=Number(this.value)">
+    <input type="number" value="180" id="height" onchange="b=Number(this.value)">
     <br>
     <button onclick="f()">Számolj!</button>
     <br>
@@ -16,7 +16,7 @@
 </body>
 
 <script>
-    a=5, b=5
+    a=65, b=180
     function f() {
         document.getElementById("x").innerHTML=a/((b/100)*(b/100))
         
