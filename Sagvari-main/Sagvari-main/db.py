@@ -1,3 +1,4 @@
+import math
 t = list(map(lambda x: list(map(int, x.split("-"))),open("input.txt").read().split("\n")))
 
 print("2. feladat")
@@ -13,39 +14,37 @@ t3 = t3[:12]
 print(f'A 2. sorban szereplő 12 legkisebb szám összege: {sum(t3)}')
 
 print("4. feladat")
-t4 = t[2]
+t4 = t[2][:]
 for num in t4:
     if num < 7:
         t4.remove(num)
 print(f'A 3. sorban szereplő 7-nél nagyobb számok maximuma: {max(t4)}')
 
+from math import sqrt as gy
 print("5. feladat")
-t5 = t[3]
-def multiply_numbers(list):
-   prod = 1
-   for i in list:
-      prod = prod*i
-   return prod
-t5 = multiply_numbers(t5)
 
-print(f'A 4. sorban szereplő számok szorzatának nagyságrendje: 10^{len(str(t5))-1}')
+
+print(f'A 4. sorban szereplő ')
 
 print("6. feladat")
-t6 = t[4]
-o = 0
-for num in t6: 
-    if num % 2 == 0:
-        o += num ** 2
-print(o)
+t6 = t[4][:]
+t6 = filter(lambda num: num % 2 == 0,t6)
+t6 = list(t6)
+for i in range(len(t6)):
+    t6[i] = t6[i] ** 2
 
-print("7. feladat")
-t7 = t[:][:]
+print(f'Az ötödik sorban szereplő páros számok négyzeteinek összege: {sum(t6)}')
+
+
+print ("7. feladat")
+t7 = t
 def flatten(l):
     return [item for sublist in l for item in sublist]
 t7 = flatten(t7)
-t7.sort(key = lambda x: x)
-t7 = t7[:12]
-print(f'Az inputban szereplő összes szám közül a 12 legkisebb szám maximuma: {max(t7)}')
+t7.sort(key = lambda x: -x)
+t7 = t7[:17]
+
+print(f'Az inputban szereplő összes szám közül a 17 legnagyobb szám maximuma: {min(t7)}')
 
 '''input.txt:
 53-38-81-3-75-81-33-90-74-4-99-41-2-82-5-19-10-55-68-59-93-80-85-21-77-9-95-35-92-78-11-21-40-46-4-51-68-96-48-83-32-16-32-34-20-82-46-96-68
