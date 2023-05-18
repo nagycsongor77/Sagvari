@@ -1,6 +1,0 @@
-Az emberi és számítógépes gondolkodás elemei
-
-1, Memória (-beli struktúrák) változók 
-2, műveletek (aritmetikai, logikai, szöveges) kifejezések
-3, utasítások és vezérlési szerkezetek
-4, eljárások, függvények
