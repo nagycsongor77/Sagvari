@@ -1,0 +1,9 @@
+2. feladat: SELECT cim, eredeti FROM film WHERE magyarszoveg="Heltai Olga"
+
+3.feladat: SELECT rendezo, szinkronrendezo FROM film WHERE ev >= 2000 group by rendezo, szinkronrendezo order by szinkronrendezo
+
+4.feladat: SELECT szinkronrendezo, cim FROM film, szinkron WHERE rendezo="Christopher Nolan" and studio="Mafilm Audio Kft." GROUP BY film.filmaz ORDER BY szinkronrendezo ASC
+
+5.feladat: SELECT cim, eredeti, szerep, szinesz
+	   FROM film JOIN szinkron ON film.filmaz = szinkron.filmaz
+           WHERE hang = "Anger Zsolt"
